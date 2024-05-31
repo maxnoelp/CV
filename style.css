@@ -4,17 +4,13 @@
 }
 
 body {
-  background-color: rgb(255, 38, 0);
+  background-color: rgb(0, 112, 156);
 }
 
-#calcBtn {
-  background-color: rgb(255, 0, 212);
-  height: 25px;
-  width: 50px;
-  font-size: 10px;
-  color: beige;
-  border-radius: 8px;
-  border-color: blue;
+#header {
+  font-size: 50px;
+  color: rgb(253, 253, 253);
+  font-style: italic;
 }
 
 #reset {
