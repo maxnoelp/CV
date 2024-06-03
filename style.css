@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: 0;
   font-family: "Dancing Script", cursive;
 }
@@ -13,6 +15,13 @@ body {
   margin: 0;
 }
 
+*::selection {
+  background-color: lightblue;
+}
+
+header p::after {
+  content: "🦇";
+}
 header {
   text-align: center;
   background-color: lightcyan;
