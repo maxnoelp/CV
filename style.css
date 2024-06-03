@@ -13,11 +13,6 @@ body {
   margin: 0;
 }
 
-header,
-main {
-  padding: 16px;
-}
-
 header {
   text-align: center;
   background-color: lightcyan;
@@ -30,4 +25,38 @@ body {
 
 h2 {
   color: lightcyan;
+}
+
+.nav-link {
+  padding: 4px 8px;
+}
+
+.nav-link:hover {
+  background-color: rgb(181, 252, 252);
+}
+
+.nav-link:active {
+  background-color: aqua;
+}
+
+.nav-link + .nav-link {
+  margin: 16px;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.main > * + * {
+  margin-top: 48px;
+}
+
+.main > * {
+  border-top: 2px solid white;
+}
+
+.main :first-child {
+  border: none;
 }
