@@ -20,7 +20,7 @@ main {
 
 header {
   text-align: center;
-  background-color: lightpink;
+  background-color: lightcyan;
   padding: 35px 10px;
 }
 
@@ -29,5 +29,5 @@ body {
 }
 
 h2 {
-  color: lightpink;
+  color: lightcyan;
 }
