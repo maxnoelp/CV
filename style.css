@@ -69,3 +69,12 @@ h2 {
 .main :first-child {
   border: none;
 }
+
+.experience-heading {
+  display: inline-block;
+}
+
+.experience-subheading {
+  display: inline-block;
+  margin-left: 15px;
+}
