@@ -22,12 +22,24 @@ body {
 header p::after {
   content: "🦇";
 }
-header {
+.header1 {
+  padding: 3rem 1rem;
+  padding-top: 2.5rem;
   text-align: center;
   background-color: lightcyan;
-  padding: 35px 10px;
+  position: relative;
+}
+.heading-group {
+  font-size: 4rem;
 }
 
+.main-heading {
+  font-size: 1.1em;
+}
+
+.profession {
+  font-size: 0.25em;
+}
 body {
   background-color: lightgray;
 }
@@ -80,7 +92,7 @@ h2 {
 }
 
 .hire {
-  font-size: 20px;
+  font-size: 1em;
   color: lightcyan;
   text-align: center;
   background-color: lightgray;
@@ -90,15 +102,15 @@ h2 {
   padding-right: 8px;
   padding-left: 5px;
   position: absolute;
-  top: 20px;
-  right: 40px;
+  top: 1.4rem;
+  right: 2.5rem;
 }
 
 p,
 h3 {
-  padding-left: 16px;
+  padding-left: 1rem;
 }
 
 .skilllist {
-  margin-left: 16px;
+  margin-left: 1rem;
 }
