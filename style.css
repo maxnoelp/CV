@@ -2,12 +2,12 @@
 *::before,
 *::after {
   box-sizing: 0;
-  font-family: "Dancing Script", cursive;
+  font-family: "Caveat", cursive;
 }
 
 * {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
   font-style: normal;
 }
 
