@@ -31,16 +31,13 @@ body {
   background-color: lightblue;
 }
 
-header p::after {
-  content: "🦇";
-}
 .header1 {
-  padding: 3rem 1rem;
-  padding-top: 4.5rem;
+  padding-top: 1rem;
   text-align: center;
   background-color: lightcyan;
   position: relative;
 }
+
 .heading-group {
   font-size: 4rem;
 }
@@ -52,6 +49,26 @@ header p::after {
 .profession {
   font-size: 0.25em;
 }
+
+.profession::after {
+  content: "🦇";
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+
 body {
   background-color: lightgray;
 }
@@ -61,7 +78,7 @@ h2 {
 }
 
 .nav-link {
-  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;
 }
 
 .nav-link:hover {
@@ -72,8 +89,10 @@ h2 {
   background-color: aqua;
 }
 
-.nav-link + .nav-link {
-  margin: 16px;
+@media screen and (min-width: 768px) {
+  .nav-link + .nav-link {
+    margin-left: 1rem;
+  }
 }
 
 .main {
@@ -97,7 +116,7 @@ h2 {
   padding: 0 1rem;
 }
 
-.main :first-child {
+.main > *:first-child {
   border: none;
 }
 
@@ -128,6 +147,10 @@ h2 {
 
 @media print {
   .hire-me {
+    display: none;
+  }
+
+  .flex-container {
     display: none;
   }
 }
