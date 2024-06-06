@@ -24,17 +24,25 @@
 }
 
 body {
+  --text-color: darkcyan;
+  --header-color: lightcyan;
+  --background-color: lightgray;
+  --link-color: black;
   margin: 0;
 }
 
 *::selection {
-  background-color: lightblue;
+  background-color: var(--text-color);
 }
 
 .header1 {
   padding-top: 1rem;
   text-align: center;
-  background-image: linear-gradient(120deg, darkcyan, lightcyan);
+  background-image: linear-gradient(
+    120deg,
+    var(--text-color),
+    var(--header-color)
+  );
   position: relative;
 }
 
@@ -70,11 +78,11 @@ body {
 }
 
 body {
-  background-color: lightgray;
+  background-color: var(--background-color);
 }
 
 h2 {
-  color: lightcyan;
+  color: var(--text-color);
 }
 
 .nav-link {
@@ -82,11 +90,11 @@ h2 {
 }
 
 .nav-link:hover {
-  background-color: rgb(181, 252, 252);
+  background-color: var(--background-color);
 }
 
 .nav-link:active {
-  background-color: aqua;
+  background-color: var(--background-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -112,7 +120,7 @@ h2 {
 }
 
 .main > * {
-  border-top: 0.125rem solid white;
+  border-top: 0.125rem solid var(--text-color);
   padding: 0 1rem;
 }
 
@@ -135,8 +143,12 @@ h2 {
   top: 1rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  background-color: lightgray;
-  color: lightcyan;
+  background-image: linear-gradient(
+    160deg,
+    var(--header-color),
+    var(--text-color)
+  );
+  color: var(--background-color);
 }
 
 @media screen and (min-width: 992px) {
@@ -177,5 +189,5 @@ h2 {
 
 .footer-link {
   font-size: 1.6rem;
-  color: black;
+  color: var(--link-color);
 }
