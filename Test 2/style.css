@@ -39,9 +39,6 @@ body {
   font-size: 0.75rem;
 }
 
-iframe {
-  position: absolute;
-  right: 1rem;
-  top: 10rem;
-  background-color: black;
+.iframe {
+  transform: translate(400px, 100px);
 }
