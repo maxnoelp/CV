@@ -87,6 +87,8 @@ h2 {
 
 .nav-link {
   padding: 0.25rem 0.5rem;
+  color: var(--link-color);
+  transition: background-color 0.8s ease-in-out;
 }
 
 .nav-link:hover {
