@@ -130,6 +130,20 @@ h2 {
   border: none;
 }
 
+@media screen and (min-width: 768px) {
+  .main-article {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+}
+
+.main-article-content {
+  margin-top: 4rem;
+}
+
+.main-article-heading {
+  position: relative;
+  left: -1rem;
+}
 .experience-heading {
   display: inline-block;
   left: -1rem;
@@ -183,7 +197,7 @@ h2 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-style: oblique;
 }
 

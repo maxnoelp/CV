@@ -41,4 +41,5 @@ body {
 
 .iframe {
   transform: translate(400px, 100px);
+  min-width: 200px;
 }
